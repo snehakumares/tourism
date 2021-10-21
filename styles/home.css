@@ -1,0 +1,45 @@
+/* home page*/
+
+body{
+    background-color: black;
+}
+.navbar{
+    z-index: 10000;
+}
+#heading{
+    position: absolute;
+    height: 90vh;
+    width: 100vw;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+}
+#heading h1{
+    margin: auto;
+    font-size: 3em;
+    color: white;
+    padding: 15px 100px;
+    border: 1px solid gray;
+}
+#modal{
+    position: absolute;
+    top:0%;
+    z-index: 20;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: lighten;
+}
+.carousal{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 0;
+}
+.carousalimg{
+    height: 90vh;
+}
+#carouselExampleControls button{
+    z-index: 30;
+}
