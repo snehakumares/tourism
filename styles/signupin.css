@@ -17,3 +17,12 @@ form{
 form div label{
     color: white;
 }
+.error{
+    color:white;
+    min-height: 25px;
+}
+.displayBadge{
+    margin-top: 5px;
+    display: none; 
+    text-align :center;
+}

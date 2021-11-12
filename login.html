@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Login</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
@@ -35,14 +35,16 @@
           </nav>
 
           <div id="signupin">
-            <form class="row g-3">
+            <form class="row g-3" onsubmit="return validate()">
               <div class="col-md-12">
                 <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
+                <input type="email" class="form-control" id="inputEmail4" onkeypress="emailvalidate()">
+                <p id="emailerror" class="error"></p>
               </div>
               <div class="col-md-12">
                 <label for="inputPassword4" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword4">
+                <input type="password" class="form-control" id="inputPassword4" onkeypress="passwordvalidate()">
+                <p id="passworderror" class="error"></p>
               </div>
               <div class="col-12">
                 <button type="submit" class="btn btn-primary">Login</button>
@@ -51,5 +53,6 @@
           </div>
         
         <script src="bootstrap.min.js" async defer></script>
+        <script src="loginvalidation.js" async defer></script>
     </body>
 </html>
